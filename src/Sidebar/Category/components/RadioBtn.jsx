@@ -1,15 +1,13 @@
 import React from "react";
 import "../Category.css";
 
-const RadioBtn = ({ title, name }) => {
+const RadioBtn = ({ title, name, handelChange, value, color }) => {
   return (
-    <div>
-      <label className="sidebar-lable-container">
-        <input type="radio" name={name} />
-        <span className="checkmark"></span>
-        <span className="label-text">{title}</span>
-      </label>
-    </div>
+    <label className="sidebar-lable-container">
+      <input type="radio" name={name} onChange={handelChange} value={value} />
+      <span className="checkmark" style={{ backgroundColor: color }}></span>
+      <span className="label-text">{title}</span>
+    </label>
   );
 };
 

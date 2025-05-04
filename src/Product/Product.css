@@ -21,6 +21,9 @@
 
 .card-title {
   margin-bottom: 1rem;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
 }
 
 .card-rating {
